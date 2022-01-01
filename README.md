@@ -19,6 +19,11 @@
 
 1. Clone this repository locally
 2. Copy `Catppuccin.colorscheme` to the user konsole directory (usually `~/.local/share/konsole/`)
+3. Reload Konsole
+4. Navigate to **Settings > Manage Profiles**, then click **New**
+5. Check **Default Profile**
+6. Open the **Appearence** tab and select Catppuccin
+7. Click **Apply**, then **OK**
 
 ## 💝 Thanks to
 
