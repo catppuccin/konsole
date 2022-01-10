@@ -27,4 +27,4 @@
 
 ## 💝 Thanks to
 
-- [TheExistingOne](https://github.com/TheExistingOne)
+-   [TheExistingOne](https://github.com/TheExistingOne)
