@@ -12,22 +12,24 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TheExistingOne/catppuccin-konsole/main/assets/konsole.png"/>
+  <img src="https://raw.githubusercontent.com/catppuccin/konsole/main/assets/konsole.png"/>
 </p>
 
 ## Usage
 
 1. Clone this repository locally
-2. Copy `Catppuccin.colorscheme` to the user konsole directory (usually `~/.local/share/konsole/`)
-3. Reload Konsole
-4. Navigate to **Settings > Manage Profiles**, then click **New**
-5. Check **Default Profile**
-6. Open the **Appearence** tab and select Catppuccin
-7. Click **Apply**, then **OK**
+2. Choose your flavour
+3. Copy _flavour_.colorscheme to the user konsole directory (usually `~/.local/share/konsole/`)
+4. Reload Konsole
+5. Navigate to **Settings > Manage Profiles**, then click **New**
+6. Check **Default Profile**
+7. Open the **Appearence** tab and select Catppuccin
+8. Click **Apply**, then **OK**
 
 ## 💝 Thanks to
 
 -   [TheExistingOne](https://github.com/TheExistingOne)
+-   [Isabelinc](https://github.com/Isabelincorp)
 
 &nbsp;
 
