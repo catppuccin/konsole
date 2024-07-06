@@ -1,0 +1,108 @@
+---
+whiskers:
+  version: "2.2.0"
+  matrix:
+    - flavor
+  filename: "themes/catppuccin-{{ flavor.identifier }}.colorscheme"
+---
+
+{%- macro rgb(color) -%}
+{{ color.rgb.r }},{{ color.rgb.g }},{{ color.rgb.b }}
+{%- endmacro -%}
+
+[Background]
+Color={{ self::rgb(color=base) }}
+
+[BackgroundFaint]
+Color={{ self::rgb(color=base) }}
+
+[BackgroundIntense]
+Color={{ self::rgb(color=base) }}
+
+[Color0]
+Color={{ self::rgb(color=overlay0) }}
+
+[Color0Faint]
+Color={{ self::rgb(color=overlay0) }}
+
+[Color0Intense]
+Color={{ self::rgb(color=overlay0) }}
+
+[Color1]
+Color={{ self::rgb(color=red) }}
+
+[Color1Faint]
+Color={{ self::rgb(color=red) }}
+
+[Color1Intense]
+Color={{ self::rgb(color=red) }}
+
+[Color2]
+Color={{ self::rgb(color=green) }}
+
+[Color2Faint]
+Color={{ self::rgb(color=green) }}
+
+[Color2Intense]
+Color={{ self::rgb(color=green) }}
+
+[Color3]
+Color={{ self::rgb(color=yellow) }}
+
+[Color3Faint]
+Color={{ self::rgb(color=yellow) }}
+
+[Color3Intense]
+Color={{ self::rgb(color=yellow) }}
+
+[Color4]
+Color={{ self::rgb(color=blue) }}
+
+[Color4Faint]
+Color={{ self::rgb(color=blue) }}
+
+[Color4Intense]
+Color={{ self::rgb(color=blue) }}
+
+[Color5]
+Color={{ self::rgb(color=mauve) }}
+
+[Color5Faint]
+Color={{ self::rgb(color=mauve) }}
+
+[Color5Intense]
+Color={{ self::rgb(color=mauve) }}
+
+[Color6]
+Color={{ self::rgb(color=sky) }}
+
+[Color6Faint]
+Color={{ self::rgb(color=sky) }}
+
+[Color6Intense]
+Color={{ self::rgb(color=sky) }}
+
+[Color7]
+Color={{ self::rgb(color=text) }}
+
+[Color7Faint]
+Color={{ self::rgb(color=text) }}
+
+[Color7Intense]
+Color={{ self::rgb(color=text) }}
+
+[Foreground]
+Color={{ self::rgb(color=text) }}
+
+[ForegroundFaint]
+Color={{ self::rgb(color=text) }}
+
+[ForegroundIntense]
+Color={{ self::rgb(color=text) }}
+
+[General]
+Blur=false
+ColorRandomization=false
+Description=Catppuccin {{ flavor.name }}
+Opacity=1
+Wallpaper=
