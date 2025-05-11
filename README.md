@@ -17,7 +17,8 @@
 
 ## Usage
 
-1. Copy the flavor of your choice from [`themes/`](./themes/) to your user konsole directory (usually `~/.local/share/konsole/`).
+1. Copy the flavor of your choice from [`themes/`](./themes/) to your user
+   konsole directory (usually `~/.local/share/konsole/`).
 2. Reload Konsole.
 3. Navigate to **Settings** > **Manage Profiles**, then click **New**.
 4. Check **Default Profile**.
