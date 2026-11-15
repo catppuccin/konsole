@@ -1,6 +1,6 @@
 ---
 whiskers:
-  version: "2.2.0"
+  version: "^2.10.0"
   matrix:
     - flavor
   filename: "themes/catppuccin-{{ flavor.identifier }}.colorscheme"
@@ -19,78 +19,17 @@ Color={{ self::rgb(color=base) }}
 [BackgroundIntense]
 Color={{ self::rgb(color=base) }}
 
-[Color0]
-Color={{ self::rgb(color=overlay0) }}
+{% for _, pair in flavor.ansi_color_pairs -%}
+[Color{{ pair.order }}]
+Color={{ self::rgb(color=pair.normal) }}
 
-[Color0Faint]
-Color={{ self::rgb(color=overlay0) }}
+[Color{{ pair.order }}Faint]
+Color={{ self::rgb(color=pair.normal) }}
 
-[Color0Intense]
-Color={{ self::rgb(color=overlay0) }}
+[Color{{ pair.order }}Intense]
+Color={{ self::rgb(color=pair.bright) }}
 
-[Color1]
-Color={{ self::rgb(color=red) }}
-
-[Color1Faint]
-Color={{ self::rgb(color=red) }}
-
-[Color1Intense]
-Color={{ self::rgb(color=red) }}
-
-[Color2]
-Color={{ self::rgb(color=green) }}
-
-[Color2Faint]
-Color={{ self::rgb(color=green) }}
-
-[Color2Intense]
-Color={{ self::rgb(color=green) }}
-
-[Color3]
-Color={{ self::rgb(color=yellow) }}
-
-[Color3Faint]
-Color={{ self::rgb(color=yellow) }}
-
-[Color3Intense]
-Color={{ self::rgb(color=yellow) }}
-
-[Color4]
-Color={{ self::rgb(color=blue) }}
-
-[Color4Faint]
-Color={{ self::rgb(color=blue) }}
-
-[Color4Intense]
-Color={{ self::rgb(color=blue) }}
-
-[Color5]
-Color={{ self::rgb(color=mauve) }}
-
-[Color5Faint]
-Color={{ self::rgb(color=mauve) }}
-
-[Color5Intense]
-Color={{ self::rgb(color=mauve) }}
-
-[Color6]
-Color={{ self::rgb(color=sky) }}
-
-[Color6Faint]
-Color={{ self::rgb(color=sky) }}
-
-[Color6Intense]
-Color={{ self::rgb(color=sky) }}
-
-[Color7]
-Color={{ self::rgb(color=text) }}
-
-[Color7Faint]
-Color={{ self::rgb(color=text) }}
-
-[Color7Intense]
-Color={{ self::rgb(color=text) }}
-
+{% endfor -%}
 [Foreground]
 Color={{ self::rgb(color=text) }}
 
